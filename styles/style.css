@@ -25,7 +25,12 @@ nav a {
     text-align: center;
     padding: 35px;
 }
-
+.heading {
+    text-align: center;
+}
+#contact-button {
+    color: #176B87;
+}
 footer {
     background-color: #176B87;
     color: #EEF5FF;
