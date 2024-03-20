@@ -27,9 +27,55 @@ nav a {
 }
 .heading {
     text-align: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    z-index: 1;
+}
+main {
+    background-color: #EEF5FF;
+    margin: 0;
+    padding: 0;
+}
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 15px;
+}
+#hero-image {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: center;
+    margin-top: 15%;
+}
+.introduction {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    color: #DADFF7;
+    font-size: large;
+    margin-right: 10%;
+    padding: 15%;
+    box-shadow: 5px 5px 10px #176B87;
+    background-color: #176B87;
+}
+#family-pic {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-top: 7%;
 }
 #contact-button {
     color: #176B87;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    text-align: center;
+    font-size: larger;
+    background-color: #DADFF7;
+    text-decoration: none;
+    padding: 15px 15px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+#contact-button:hover {
+    background-color:  #EEF5FF;
 }
 footer {
     background-color: #176B87;
@@ -55,4 +101,13 @@ footer p a:hover {
 }
 footer .social img {
     padding-top: 15px;
+}
+
+@media screen and (max-width: 900px) {
+    .heading {
+        text-align: left;
+    }
+    #hero-image {
+        margin: 0 auto;
+    }
 }
