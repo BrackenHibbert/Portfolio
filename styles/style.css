@@ -44,11 +44,11 @@ main {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr 100px;
 }
-#hero-image {
+.image {
     grid-column: 2/3;
     grid-row: 1/2;
+    margin-top: 100px;
     justify-self: center;
-    margin-top: 15%;
 }
 .introduction {
     grid-column: 2/4;
