@@ -214,3 +214,13 @@ footer p a:hover {
 footer .social img {
     padding-top: 15px;
 }
+#contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+#contact-picture {
+    grid-column: 1/2;
+    grid-row: 1/5;
+}
